@@ -1,0 +1,131 @@
+.maindiv {
+    display: flex;
+    box-shadow: 0px 0px 10px 0px #000000;  
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+
+.mylogo {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 10px;
+    gap: 5px;
+}
+
+.mylogo a {
+    text-decoration: none;
+    color: black;
+}
+
+.myname {
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -30px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item-list {
+    display: block;
+    
+}
+
+.nav-item-list:hover {
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);    
+      box-shadow: 5px 5px 20px rgb(211, 211, 211) , -5px -5px 20px rgb(198, 198, 198)  ;
+      
+}
+
+.nav-item-list a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    
+}
+
+/* Add this style for mobile menu button */
+.mobile-menu-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  /* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      align-items: center; /* Align items to the right side */
+      width:100%;
+      position: absolute;
+      top: 60.39px; /* Adjust this value based on your design */
+      background-color: white;
+      box-shadow: 0px 10px 8px 0px #000000;
+      z-index: 0;
+      margin-left: -4px;
+    }
+  
+    .nav-items {
+      width: 60%;
+      text-align: center;
+      display: flex;
+      flex-direction: column; /* Set the direction to column */
+    }
+  
+    .nav-item-list {
+      text-align: center; /* Center the text in the column */
+      margin: 0px; /* Add some spacing */
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    
+  
+    .mobile-menu-button {
+      display: flex;
+      margin-left: auto;
+      padding-right: 30px; /* Move the button to the right side */
+      order: 2; /* Set the order to 2 to place it after the logo */
+    }
+  
+    .navbar.mobile-menu-open {
+      display: flex;
+    }
+  
+    /* Hide the button in desktop view */
+    .navbar:not(.mobile-menu-open) .mobile-menu-button {
+      display: none;
+    }
+  }
+  
+  
+  

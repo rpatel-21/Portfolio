@@ -1,0 +1,82 @@
+.main-div{
+    padding: 50px ;
+}
+.about-owner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15vh;
+    padding-bottom: 50px;
+    
+}
+
+.owner-title p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.owner-name{
+    font-size: 65px;
+    font-family: 'Arizonia', cursive;
+    
+}
+
+.about-owner{
+    font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.owner-image{
+    border-radius: 25px;
+    width: 25%;
+    
+    
+    border: none;
+    transition: box-shadow ease-in-out 0.25s ;
+    box-shadow: 12px 12px 12px #c7c7c7, -12px -12px 20px #c6c6c6;
+}
+
+.owner-image:hover{
+    box-shadow:16px 16px 30px #b3b3b3, -16px -16px 30px #c2c2c2 ;   
+}
+.owner-data{
+    font-size: 24px;
+    font-family: 'Source Code Pro', monospace;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.languages{
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 768px){
+    .about-owner {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+        padding: 25px;
+    }
+    .owner-name{
+        font-size: 60px;
+    }
+    .owner-detail{
+        font-size: 15px;
+    }
+    .owner-image{
+        width: 80%;
+        border-radius: 50%;
+    }
+    .owner-data{
+        font-size: 15px;
+        font-family: 'Source Code Pro', monospace;
+        text-align: justify;
+        padding: 20px;
+        hyphens: auto;
+    }
+}
